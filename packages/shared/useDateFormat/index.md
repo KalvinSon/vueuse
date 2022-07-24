@@ -26,6 +26,9 @@ Get the formatted date according to the string of tokens passed in, inspired by 
 | `ss`   | 00-59            | The second, 2-digits                  |
 | `SSS`  | 000-999          | The millisecond, 3-digits             |
 | `d`    | 0-6              | The day of the week, with Sunday as 0 |
+| `dd`   | S-S              | The min name of the day of the week   |
+| `ddd`  | Sun-Sat          | The short name of the day of the week |
+| `dddd` | Sunday-Saturday  | The name of the day of the week       |
 
 ## Usage
 
