@@ -32,6 +32,8 @@ Get the formatted date according to the string of tokens passed in, inspired by 
 
 ## Usage
 
+### Basic
+
 ```html
 <script setup lang="ts">
 
@@ -39,6 +41,23 @@ import { ref, computed } from 'vue-demi'
 import { useNow, useDateFormat } from '@vueuse/core'
 
 const formatted = useDateFormat(useNow(), 'YYYY-MM-DD HH:mm:ss')
+
+</script>
+
+<template>
+  <div>{{ formatted }}</div>
+</template>
+```
+
+### Use with locale
+
+```html
+<script setup lang="ts">
+
+import { ref, computed } from 'vue-demi'
+import { useNow, useDateFormat } from '@vueuse/core'
+
+const formatted = useDateFormat(useNow(), 'YYYY-MM-DD (ddd)', { locales: 'en-US' })
 
 </script>
 
